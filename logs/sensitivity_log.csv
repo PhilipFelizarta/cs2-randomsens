@@ -1,0 +1,21 @@
+timestamp,sensitivity,autoexec_content
+2026-01-04 13:04:15 PST,1.304,"// =========================
+// CS2 AUTOEXEC
+// =========================
+
+// Sensitivity (randomized)
+sensitivity ""1.304""
+
+// Jump binds
+bind ""mwheelup"" ""+jump""
+bind ""mwheeldown"" ""+jump""
+bind ""ctrl"" ""+jump""
+
+// Crouch
+bind ""space"" ""+duck""
+
+// Flashbang
+bind ""x"" ""slot7""
+
+// Ensure autoexec runs
+echo ""Autoexec loaded successfully"""
