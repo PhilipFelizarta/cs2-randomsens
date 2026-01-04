@@ -1,7 +1,0 @@
-[
-  {
-    "timestamp": "2026-01-04 13:04:15 PST",
-    "sensitivity": 1.304,
-    "autoexec_content": "// =========================\n// CS2 AUTOEXEC\n// =========================\n\n// Sensitivity (randomized)\nsensitivity \"1.304\"\n\n// Jump binds\nbind \"mwheelup\" \"+jump\"\nbind \"mwheeldown\" \"+jump\"\nbind \"ctrl\" \"+jump\"\n\n// Crouch\nbind \"space\" \"+duck\"\n\n// Flashbang\nbind \"x\" \"slot7\"\n\n// Ensure autoexec runs\necho \"Autoexec loaded successfully\""
-  }
-]
