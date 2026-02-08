@@ -44,22 +44,36 @@ Replace the contents of `example_autoexec.cfg` with your own autoexec commands. 
 Run the script to randomize your sensitivity:
 
 ```bash
-.\env\Scripts\python randomize_sensitivity.py
+.\env\Scripts\python main.py
 ```
 
-This will:
-1. Generate a random sensitivity between 0.7 and 2.1
-2. Create `autoexec.cfg` in your CS2 cfg folder with the new sensitivity
-3. Log the timestamp, sensitivity, and full config to `logs/sensitivity_log.csv` and `logs/sensitivity_log.json`
+### Commands
+
+| Command | Description |
+|---------|-------------|
+| `python main.py` | Randomize sensitivity (default) |
+| `python main.py --main` | Use your favorite/main sensitivity |
+| `python main.py --set-main-sens 1.5` | Set your favorite sensitivity |
+| `python main.py --show-random` | Show the random sensitivity range |
+| `python main.py --set-lower 0.5` | Set the lower bound for random |
+| `python main.py --set-upper 2.5` | Set the upper bound for random |
+| `python main.py --help` | Show all available commands |
+
+### What it does
+
+1. Generates a random sensitivity (or uses your main sens with `--main`)
+2. Creates `autoexec.cfg` in your CS2 cfg folder with the new sensitivity
+3. Logs the timestamp, sensitivity, and full config to `logs/`
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `randomize_sensitivity.py` | Main script |
+| `main.py` | Main script |
 | `example_autoexec.cfg` | Your autoexec template (edit this!) |
 | `.env` | Your local config (not tracked) |
 | `.env.example` | Example config template |
+| `config/` | Saved settings like main sens, bounds (not tracked) |
 | `logs/` | CSV and JSON logs (not tracked) |
 
 ## License
